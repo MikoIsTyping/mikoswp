@@ -1,2 +1,2 @@
 # mikoswp
-My github for the web programming course @ HWU
+My repository for the web programming course @ HWU
