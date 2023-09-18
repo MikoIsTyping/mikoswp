@@ -5,6 +5,9 @@ code {
     background-color: rgb(0, 0, 0);
     color:rgb(13, 255, 0)
 }
+body {
+    background-color: grey;
+}
 </style>
 
 
@@ -15,10 +18,56 @@ code {
 </head>
 
 <body>
+
+    <script> function colour(){ document.getElementById("cchanger").style.color = "lightgreen"; }</script>
+    <script> function fontweight(){ document.getElementById("fontweight").style.fontWeight = "bold";}</script>
+
+
+
+
     <p style = "font-weight:bold">Text colour:<br></br></p>
-      <p>Colour of text can be changed by simply adding the <code>color</code> tag either in another tag such as in <code>&lth1 color: lightblue&gtHello World!&lth1&gt</code> or separately in the <code>&ltstyle&gt</code> tag
+      <p id = "cchanger">Colour of text can be changed by simply adding the 
+        <code>color</code> 
+        tag either in another tag such as in 
+        <code>&lth1 color: lightblue&gtHello World!&lth1&gt</code> 
+        or separately in the 
+        <code>&ltstyle&gt</code> 
+        tag
+        <br>
+        <br>
+        Colur can be described as a word which includes many examples such as
+        <code>lightblue</code>
+        or
+        <code>green</code>
+        but can also be described in rgb
+        <code>color: rgb(13,255,0)</code>
+        or even hexadecimal
+        <code>color: #0DFF05</code>
     </p>
     <button onclick="colour()">Change colour!</button>
+
+    <p style = "font-weight:bold">Font weight<br></br></p>
+    <p id = "fontweight">
+        Font weight refers to the thickness of the font. This can be changed by simply adding the 
+        <code>font-weight</code> 
+        tag either in another tag such as in 
+        <code>&lth1 style = "font-weight:bold"&gtHello World!&lth1&gt</code> 
+        or, as before separately in the 
+        <code>&ltstyle&gt</code> 
+        tag.
+        <br>
+        <br>
+        Font weight can be described either as a word such as 
+        <code>bold</code> 
+        or 
+        <code>bolder</code> 
+        or as a value such as 
+        <code>700</code> 
+        which is equivalent to 
+        <code>bold</code>
+
+  </p>
+  <button onclick="fontweight()">Change font weight!</button>
 
 </body>
 
