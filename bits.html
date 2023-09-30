@@ -1,0 +1,52 @@
+<html title = bitchanger>
+
+<style>
+code {
+    background-color: rgb(0, 0, 0);
+    color:rgb(13, 255, 0)
+}
+body {
+    background-color: grey;
+}
+</style>
+
+
+</pre>
+  
+<head>
+    <h1>Change number to its corresponding bits! </h1>
+</head>
+
+<body>
+    <form>
+        Number:<br> <input type="integer" name="number">
+        <input type="submit" id = "num" value="Submit">
+        </form>
+
+        <script>
+            let hello = document.getElementById("num").value;
+            var countBits = function(hello) {
+            const bin = n.toString(2);
+            const hell =  bin.split(""); 
+            let a = 0;
+            for (let i=0; i<hell.length; i++){
+                 let hello = parseInt(hell[i]);
+                  a = a + hello;
+                }
+            return a;
+  }
+        </script>
+
+        <button type="button" onclick="document.write(hello)">Try it</button>
+        
+
+
+        
+
+
+
+
+</body>
+
+
+</html>
