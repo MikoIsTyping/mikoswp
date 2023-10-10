@@ -18,26 +18,25 @@ body {
 </head>
 
 <body>
-    <form>
-        Number:<br> <input type="integer" name="number">
-        <input type="submit" id = "num" value="Submit">
-        </form>
+    <div id = "resultdiv">
 
+    </div>
         <script>
-            let hello = document.getElementById("num").value;
-            var countBits = function(hello) {
+            num = 3;
+            var countBits = function(num) {
             const bin = n.toString(2);
             const hell =  bin.split(""); 
             let a = 0;
             for (let i=0; i<hell.length; i++){
-                 let hello = parseInt(hell[i]);
-                  a = a + hello;
+                 let num = parseInt(hell[i]);
+                  a = a + num;
                 }
             return a;
-  }
+            document.getElementById("resultdiv").innerHTML = a.toString();
+  } 
         </script>
 
-        <button type="button" onclick="document.write(hello)">Try it</button>
+        <button type="button" onclick="document.write(num)">Try it</button>
         
 
 
