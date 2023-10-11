@@ -18,25 +18,33 @@ body {
 </head>
 
 <body>
-    <div id = "resultdiv">
-
-    </div>
-        <script>
-            num = 3;
-            var countBits = function(num) {
+    <script>
+        function countBits(num) {
             const bin = n.toString(2);
             const hell =  bin.split(""); 
             let a = 0;
             for (let i=0; i<hell.length; i++){
-                 let num = parseInt(hell[i]);
-                  a = a + num;
-                }
-            return a;
-            document.getElementById("resultdiv").innerHTML = a.toString();
-  } 
+                let num = parseInt(hell[i]);
+                a = a + num;
+            }
+        return a;
+         } 
+    </script>
+    
+    <form>
+        <input type="number" id="formValueId" name="valueId"/>
+        <input type="button" onclick="countBits(this.form.valueId.value)"/>
+    </form>
+
+
+
+
+        <script>
+            function write(){
+                document.write(countBits(coco))}
         </script>
 
-        <button type="button" onclick="document.write(num)">Try it</button>
+        
         
 
 
