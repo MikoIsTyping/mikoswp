@@ -20,29 +20,28 @@ body {
 <body>
     <script>
         function countBits(num) {
-            const bin = n.toString(2);
+            const bin = num.toString(2);
             const hell =  bin.split(""); 
-            let a = 0;
+            let a = 0;  
             for (let i=0; i<hell.length; i++){
                 let num = parseInt(hell[i]);
                 a = a + num;
             }
-        return a;
+
+            document.getElementById('bitsout').innerHTML = a;
+            return a;
          } 
+
     </script>
     
     <form>
         <input type="number" id="formValueId" name="valueId"/>
         <input type="button" onclick="countBits(this.form.valueId.value)"/>
+        <p id="bitsout"></p>
     </form>
 
 
 
-
-        <script>
-            function write(){
-                document.write(countBits(coco))}
-        </script>
 
         
         
