@@ -9,9 +9,58 @@
             float: left;
             
         }
+        .row {
+            clear: both;
+        }
     </style>
+</head>
+
 <body>
+    <div class="row">
+        <div id = "A1"onclick="place(this)"></div>
+        <div id = "A2"onclick="place(this)"></div>
+        <div id = "A3"onclick="place(this)"></div>
+    </div>
+    <div class="row">
+        <div id = "B1"onclick="place(this)"></div>
+        <div id = "B2"onclick="place(this)"></div>
+        <div id = "B3"onclick="place(this)"></div>
+    </div>
+    <div class="row">
+        <div id = "C1"onclick="place(this)"></div>
+        <div id = "C2"onclick="place(this)"></div>
+        <div id = "C3"onclick="place(this)"></div>
+
+    </div>
+
+<script>
+    let player = "O";
+    function place(rec){
+        if (rec.innerText != ""){
+            return
+        }
+        rec.innerText=player;
+        if (player == "O"){
+            player = "X";
+        }
+        else{
+            player = "O";
+        }
+
+
+
+        }
+        
+
+
+</script>
+
+<script>
+    function winnerCheck(){
+        
+
+    }
+</script>
 
 </body>
-</head>
 </html>
